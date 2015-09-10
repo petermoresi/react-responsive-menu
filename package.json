@@ -1,0 +1,32 @@
+{
+  "name": "react-responsive-menu",
+  "version": "1.0.0",
+  "description": "A react component for responsive menus, built with rwb.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermoresi/react-responsive-menu.git"
+  },
+  "author": "Peter Moresi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petermoresi/react-responsive-menu/issues"
+  },
+  "homepage": "https://github.com/petermoresi/react-responsive-menu#readme",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "react-router": "^0.13.3"
+  },
+  "keywords": [
+    "react"
+  ],
+  "react": {
+    "routes": "./routes.js",
+    "rwb": "0.0.2"
+  }
+}
