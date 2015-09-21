@@ -101,20 +101,20 @@ input.showMenuCheckbox[type=checkbox]:checked ~ #menu{
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
 	/*Make dropdown links appear inline*/
-:local( 	ul.menu ) {
+:local( ul.menu ) {
 		position: static;
 		display: none;
 	}
 	/*Create vertical spacing*/
-:local( 	li.menuItem ) {
+:local( li.menuItem ) {
 		margin-bottom: 1px;
 	}
 	/*Make all menu links full width*/
-:local( 	li.menuItem, li a ) {
+:local( li.menuItem, li a ) {
 		width: 100%;
 	}
 	/*Display 'show menu' link*/
-:local( 	.showMenuButton ) {
+:local( .showMenuButton ) {
 		display:block;
 	}
 }
