@@ -1,6 +1,5 @@
 /*Strip the ul of padding and list styling*/
 :local( .menuContainer ) {
-	display: inline-block
 }
 
 :local( ul.menu, ul.subMenu ) {
@@ -12,7 +11,7 @@
 
 /*Create a horizontal list with spacing*/
 :local( li.menuItem ) {
-	display:inline-block;
+	display:block;
 	float: left;
 	margin-right: 1px;
 }
@@ -69,10 +68,13 @@
 }
 
 /*Display the dropdown on hover*/
-:local( li.menuItem a:hover + .subMenu, .subMenu:hover ) {
+:local( li.menuItem a:hover + .subMenu ) {
 	display: block;
 }
 
+:local( .subMenu:hover ) {
+	display: block;
+}
 
 
 /*Style 'show menu' label button and hide it by default*/
@@ -93,28 +95,28 @@
 }
 
 /*Show menu when invisible checkbox is checked*/
-input.showMenuCheckbox[type=checkbox]:checked ~ #menu{
+:local( input.showMenuCheckbox[type=checkbox]:checked ~ .menu ) {
     display: block;
 }
 
 
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
-	/*Make dropdown links appear inline*/
-:local( ul.menu ) {
-		position: static;
-		display: none;
-	}
-	/*Create vertical spacing*/
-:local( li.menuItem ) {
-		margin-bottom: 1px;
-	}
-	/*Make all menu links full width*/
-:local( li.menuItem, li a ) {
-		width: 100%;
-	}
-	/*Display 'show menu' link*/
-:local( .showMenuButton ) {
-		display:block;
-	}
+  /*Make dropdown links appear inline*/
+ :local( ul.menu ) {
+   position: static;
+   display: none;
+ }
+  /*Create vertical spacing*/
+ :local( li.menuItem ) {
+   margin-bottom: 1px;
+ }
+  /*Make all menu links full width*/
+ :local( li.menuItem, li a ) {
+   width: 100%;
+ }
+  /*Display 'show menu' link*/
+ :local( .showMenuButton ) {
+   display:block;
+ }
 }
