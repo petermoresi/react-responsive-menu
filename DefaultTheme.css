@@ -2,7 +2,14 @@
 :local( .menuContainer ) {
 }
 
-:local( ul.menu, ul.subMenu ) {
+:local( ul.menu ) {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+:local( ul.subMenu ) {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -11,7 +18,7 @@
 
 /*Create a horizontal list with spacing*/
 :local( li.menuItem ) {
-	display:block;
+	display:inline-block;
 	float: left;
 	margin-right: 1px;
 }
@@ -105,14 +112,25 @@
   /*Make dropdown links appear inline*/
  :local( ul.menu ) {
    position: static;
+   margin: 0;
+   padding: 0;
    display: none;
  }
+ :local( ul.subMenu ) {
+   position: static;
+   margin: 0;
+   padding: 0;
+   display: none;
+ } 
   /*Create vertical spacing*/
  :local( li.menuItem ) {
    margin-bottom: 1px;
  }
   /*Make all menu links full width*/
- :local( li.menuItem, li a ) {
+ :local( li.menuItem ) {
+   width: 100%;
+ }
+ :local( li a ) {
    width: 100%;
  }
   /*Display 'show menu' link*/
