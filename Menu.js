@@ -20,7 +20,7 @@ var Menu = React.createClass({
     var theme = defaultTheme,
     checkboxId = 'show-menu-' + this.props.id;
     return (
-      <div className={theme.menuContainer}>
+      <div className={theme.container}>
         <label htmlFor={ checkboxId } className={theme.showMenuButton}>Show Menu</label>
         <input type="checkbox" id={checkboxId} role="button" className={theme.showMenuCheckbox}/>
         <ul className={theme.menu}>
@@ -42,7 +42,7 @@ var Menu = React.createClass({
                 }
 
                 return (
-                  <li className={theme.menuItem}>
+                  <li className={theme.item}>
                     <a href={item.href}>{item.textContent}</a>
                     {subMenu}
                   </li>
