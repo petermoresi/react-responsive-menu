@@ -1,6 +1,6 @@
 {
   "name": "react-responsive-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component for responsive menus, built with rwb.",
   "main": "index.js",
   "scripts": {
